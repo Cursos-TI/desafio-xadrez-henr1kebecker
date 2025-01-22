@@ -17,7 +17,6 @@ void movimentarBispo(){
         printf("Direita\n");
     }
     
-
 };
 
 
