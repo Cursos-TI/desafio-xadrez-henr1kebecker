@@ -38,7 +38,7 @@ void movimentarRainha(){
     
     while (rainha > 0)
     {
-        printf("Direita\n");
+        printf("Esquerda\n");
         rainha--;
     }
 
@@ -47,29 +47,24 @@ void movimentarRainha(){
 void movimentarCavalo(){
     int cavalo = 1;
     int controle = 2;
+    printf("Cavalo se movendo\n");
     for (int i = 0; i < cavalo; i++)
+    // Como o cavalo se move em forma de L o primeiro loop so pode ser executado 1x
+    // indicando a curva do L. 
     {
-    while (controle >= 0)
-    {
-        printf("Cima\n");
-        controle--;
-    }
-    printf("Esquerda\n");
+        while (controle >= 0)
+        // já o while executa 3x indicando o avanço de 3 casas contando com a que ele está.
+        {
+            printf("Cima\n");
+            controle--;
+        }
+        printf("Esquerda\n");
 
     };
-
-    return 0;
 };
 
 
 int main() {
-    // Nível Novato - Movimentação das Peças
-    // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
-    
-    
-    
-    int cavalo = 4;
-
     // Implementação de Movimentação do Bispo
     // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
     movimentarBispo();
