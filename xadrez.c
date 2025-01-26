@@ -19,13 +19,55 @@ void movimentarBispo(){
     
 };
 
+void movimentarTorre(){
+    int torre = 5;
+
+    printf("Torre se movendo\n"); // coloquei esse printf para ficar claro quem ta se movendo
+    while (torre > 0)
+    {
+        printf("Direita\n");
+        torre--;
+    }
+
+};
+
+void movimentarRainha(){
+
+    int rainha = 8;
+    printf("Rainha se movendo\n"); // coloquei esse printf para ficar claro quem ta se movendo
+    
+    while (rainha > 0)
+    {
+        printf("Direita\n");
+        rainha--;
+    }
+
+}
+
+void movimentarCavalo(){
+    int cavalo = 1;
+    int controle = 2;
+    for (int i = 0; i < cavalo; i++)
+    {
+    while (controle >= 0)
+    {
+        printf("Cima\n");
+        controle--;
+    }
+    printf("Esquerda\n");
+
+    };
+
+    return 0;
+};
+
 
 int main() {
     // Nível Novato - Movimentação das Peças
     // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
     
-    int torre = 5;
-    int rainha = 8;
+    
+    
     int cavalo = 4;
 
     // Implementação de Movimentação do Bispo
@@ -34,32 +76,15 @@ int main() {
 
     // Implementação de Movimentação da Torre
     // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
-    printf("Torre se movendo\n"); // coloquei esse printf para ficar claro quem ta se movendo
-    while (torre > 0)
-    {
-        printf("Direita\n");
-        torre--;
-    }
+    movimentarTorre();
 
     // Implementação de Movimentação da Rainha
     // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
-    printf("Rainha se movendo\n"); // coloquei esse printf para ficar claro quem ta se movendo
-    while (rainha > 0)
-    {
-        printf("Direita\n");
-        rainha--;
-    }
-
+    movimentarRainha();
     // Nível Aventureiro - Movimentação do Cavalo
     // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
     // Um loop pode representar a movimentação horizontal e outro vertical.
-    printf("Cavalo se movendo\n"); // coloquei esse printf para ficar claro quem ta se movendo    
-    while (cavalo == 4)
-    {
-        printf("Cima\nCima\nCima\nEsquerda\n");
-        cavalo--;
-        
-    }
+    movimentarCavalo();
     
 
     // Nível Mestre - Funções Recursivas e Loops Aninhados
